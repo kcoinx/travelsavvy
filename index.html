@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test My Bot</title>
+</head>
+<body>
+  <h1>Welcome to My Bot Test Page</h1>
+  <p>Click on the chat icon below to start interacting with the bot.</p>
+
+  <!-- Botpress Webchat Script -->
+  <script>
+    window.botpressWebChat.init({
+      host: 'https://cdn.botpress.cloud/webchat/v2.1/shareable.html?botId=e27b2b80-b0ec-45da-a4a2-c89b0e0a5293', // Replace with your Botpress server URL
+      botId: 'c2630859-a40a-464e-b567-d963826fb878', // Replace with your bot ID
+      hideWidget: false, // Show or hide widget by default
+      enableReset: true, // Enable reset button inside the widget
+    });
+  </script>
+
+</body>
+</html>
