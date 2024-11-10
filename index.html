@@ -1,23 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test My Bot</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHX Trip Planner</title>
+    <style>
+        /* Basic CSS reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #3498db;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        header h1 {
+            font-size: 2em;
+        }
+
+        /* Hero section */
+        .hero {
+            background-image: url('hero-image.jpg'); /* Add a background image for travel theme */
+            background-size: cover;
+            padding: 100px 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .hero button {
+            padding: 10px 20px;
+            background-color: #e67e22;
+            border: none;
+            color: #fff;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+
+        /* Main content */
+        .content-section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .content-section h3 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .content-section p {
+            max-width: 600px;
+            margin: auto;
+            margin-bottom: 40px;
+        }
+
+        .button-group button {
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer-text {
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 <body>
-  <h1>Welcome to My Bot Test Page</h1>
-  <p>Click on the chat icon below to start interacting with the bot.</p>
 
-  <!-- Botpress Webchat Script -->
-  <script>
-    window.botpressWebChat.init({
-      host: https://mediafiles.botpress.cloud/e27b2b80-b0ec-45da-a4a2-c89b0e0a5293/webchat/bot.html, // Replace with your Botpress server URL
-      botId: 'e27b2b80-b0ec-45da-a4a2-c89b0e0a5293', // Replace with your bot ID
-      hideWidget: false, // Show or hide widget by default
-      enableReset: true, // Enable reset button inside the widget
-    });
-  </script>
+    <!-- Header -->
+    <header>
+        <h1>PHX Travel Planner</h1>
+        <p>Your personal assistant for unforgettable travel experiences!</p>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h2>Start Planning Your Next Adventure</h2>
+        <button onclick="alert('Planning coming soon!')">Start Planning</button>
+    </div>
+
+    <!-- Main Content Sections -->
+    <div class="content-section" id="destinations">
+        <h3>Popular Destinations</h3>
+        <p>Discover top destinations around the world tailored to your preferences.</p>
+        <div class="button-group">
+            <button>Explore Europe</button>
+            <button>Discover Asia</button>
+            <button>Visit South America</button>
+        </div>
+    </div>
+
+    <div class="content-section" id="itineraries">
+        <h3>Personalized Itineraries</h3>
+        <p>Let PHX create custom itineraries for your perfect trip.</p>
+    </div>
+
+    <div class="content-section" id="testimonials">
+        <h3>What Our Travelers Say</h3>
+        <p>"The best travel planning experience I've ever had!" - Jane Doe</p>
+        <p>"PHX made it so easy to plan my dream vacation." - John Smith</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 PHX Travel Planner. All Rights Reserved.</p>
+        <div class="footer-text">Made for travelers, by travelers.</div>
+    </footer>
 
 </body>
 </html>
